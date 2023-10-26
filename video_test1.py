@@ -184,3 +184,7 @@ if __name__ == "__main__":
         video_recognize(image_classes, embeddings, det, face_model, identified, video_source, args.frames_per_detect, args.dist_thresh)
         
     print(identified)
+    df = pd.DataFrame(data=identified, index=[0])
+    df = (df.T)
+    print (df)
+    df.to_excel('attendance.xlsx')
