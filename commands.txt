@@ -1,0 +1,27 @@
+** To Create Conda Env **
+conda info --envs
+conda create -n test_env python==3.8.18
+conda activate test_env
+
+python -V
+pip -V
+
+pip install tf-nightly tfa-nightly glob2 pandas tqdm scikit-image scikit-learn ipython
+pip install opencv-python
+
+# pip install pip-search icecream opencv-python cupy-cuda112 tensorflow-datasets tabulate mxnet-cu112 torch
+
+
+** To Run the Models **
+conda activate test_env
+cd Desktop/IEAFR/Keras_insightface
+python3 face_detector.py -D './img_datasets'
+python3 transfer_learning.py
+python3 video_test.py -m './checkpoints/model_basic_model_latest.h5' -k './img_datasets/img_datasets_aligned_112_112'
+
+
+** TO DO **
+Need to figure out Re-Scaling BT
+Train on more ppl data - with various angles
+Link the Camera and the Model
+Actually mark attendance (on xlsx?) once it recognises
