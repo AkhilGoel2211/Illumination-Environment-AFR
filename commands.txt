@@ -14,7 +14,7 @@ pip install opencv-python
 
 ** To Run the Models **
 conda activate test_env
-cd Desktop/IEAFR/Keras_insightface
+cd Desktop/Illumination-Environment-AFR/
 python3 face_detector.py -D './img_datasets'
 python3 transfer_learning.py
 python3 video_test.py -m './checkpoints/model_basic_model_latest.h5' -k './img_datasets/img_datasets_aligned_112_112'

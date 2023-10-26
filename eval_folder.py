@@ -233,6 +233,6 @@ if __name__ == "__main__":
     plot_tpr_far(score, label)
 elif __name__ == "__test__":
     data_path = "temp_test/faces_emore_test/"
-    model_file = "checkpoints/TT_mobilenet_pointwise_distill_128_emb512_dr04_arc_bs400_r100_emore_fp16_basic_agedb_30_epoch_49_0.972333.h5"
+    model_file = "checkpoints/TT_r100_max_pool_E_prelu_dr04_lr_01_l2_5e4_adaface_emb512_sgd_m09_bs512_ms1m_64_only_margin_SG_scale_true_bias_false_random_100_basic_model_latest.h5"
     batch_size = 64
     save_embeddings = None
