@@ -1,3 +1,10 @@
+/img_datasets
+/img_datasets_aligned_112_112
+/__pycache__
+/checkpoints
+
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
